@@ -1,0 +1,9 @@
+Connect-AzAccount
+
+$UserName="UserA"
+$UserPrincipalName="UserA@jknwokeyoutlook.onmicrosoft.com"
+$Password="Azure@123"
+$PasswordSecure=ConvertTo-SecureString -String $Password -AsPlainText -Force
+
+New-AzADuser -DisplayName $UserName -password $PasswordSecure `
+-UserPrincipalName $UserPrincipalName -MailNickname $UserName
