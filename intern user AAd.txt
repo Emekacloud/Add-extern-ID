@@ -7,3 +7,6 @@ $PasswordSecure=ConvertTo-SecureString -String $Password -AsPlainText -Force
 
 New-AzADuser -DisplayName $UserName -password $PasswordSecure `
 -UserPrincipalName $UserPrincipalName -MailNickname $UserName
+
+
+i am ver good at it
